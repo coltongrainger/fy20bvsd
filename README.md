@@ -17,12 +17,13 @@ Hi Suchit! Please excuse me for taking a few weeks to follow up since our last v
 #### setup a scientific computing environment
 
 - Install [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) for your operating system.
-- Open [2019-11-06-kuleshov-python-numpy-tutorial.ipynb][2019-11-06-kuleshov-python-numpy-tutorial.ipynb] by running `jupyter-notebook` in a [terminal](https://tutorial.djangogirls.org/en/intro_to_command_line/) in the directory that is your fork of this git repository on your operating system.
-- Work through that introduction and come up with a list of 5 to 10 questions about numpy and python for our next videochat.
+- Open [this tutorial](https://github.com/coltongrainger/fy20bvsd/blob/master/2019-11-06-kuleshov-python-numpy-tutorial.ipynb) by running `jupyter-notebook` in a [terminal](https://tutorial.djangogirls.org/en/intro_to_command_line/) in the directory that is your fork of this git repository on your operating system. There's a Graphic User Interface for the Jupyter Notebook in  your browser from which you can start the tutorial.
+- Work through a few sections of that tutorial (at least until you get to the definition of arrays). 
+- Please come up with a list of 5 to 10 questions about numpy and python for our next videochat.
 
-#### ask questions by opening git issues
+#### ask for help by opening git issues
 
-Thanks! Please let me know if you have any questions.
+Thanks! Please let me know if you have any questions about these instructions.
 
 1. You can either email me or, preferably,
 2. open an [issue](https://github.com/coltongrainger/fy20bvsd/issues) in this git repo.
