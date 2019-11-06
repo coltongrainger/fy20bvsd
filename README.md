@@ -1,6 +1,8 @@
-# fy20bvsd
+# Boulder Valley School District Mentoring Project
 
-## TODO list for BVSD project
+## TODO
+
+This is a reverse chronological TODO list. Please feel free to add notes/comments.
 
 ### 2019-11-06
 
@@ -15,7 +17,7 @@ Hi Suchit! Please excuse me for taking a few weeks to follow up since our last v
 #### setup a scientific computing environment
 
 - Install [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) for your operating system.
-- Open [2019-11-06-kuleshov-python-numpy-tutorial.ipynb][] by running `jupyter-notebook` in a [terminal](https://tutorial.djangogirls.org/en/intro_to_command_line/) in the directory that is your fork of this git repository on your operating system.
+- Open [2019-11-06-kuleshov-python-numpy-tutorial.ipynb][2019-11-06-kuleshov-python-numpy-tutorial.ipynb] by running `jupyter-notebook` in a [terminal](https://tutorial.djangogirls.org/en/intro_to_command_line/) in the directory that is your fork of this git repository on your operating system.
 - Work through that introduction and come up with a list of 5 to 10 questions about numpy and python for our next videochat.
 
 #### ask questions by opening git issues
