@@ -34,3 +34,22 @@ Thanks! Please let me know if you have any questions about these instructions.
 - familiarize yourself with CISL <https://www2.cisl.ucar.edu/org/about>
 - watch Philip Brohan's CISL seminar talk <https://www.youtube.com/watch?v=O98ha2c4vGs>
 - watch my SIParCS seminar talk <https://www.youtube.com/watch?v=wURNDpfBS4Q>
+
+## 2019-12-20
+
+
+The first goal should be to have enough proficiency with pandas to be able to load DataFrames from .json files that are
+
+- lists of dictionaries
+
+where the keys to the dictionaries are *unique* field names, such as, "document.id_within_archive" and "archive.host_country".
+
+The second goal should be to have enough proficiency with `exiftool` to be able to distinguish between 
+
+- two non-identical images.
+
+A third goal is to be able to recognized
+
+- two identical images with the same "ImageUniqueID" 
+
+where "ImageUniqueID" can be read by `exiftool` a la `exiftool -ImageUniqueID image.jpg` and is given by 32 character hexadecimal string.
