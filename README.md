@@ -48,7 +48,7 @@ The second goal should be to have enough proficiency with `exiftool` to be able 
 
 - two non-identical images.
 
-A third goal is to be able to recognized
+A third goal is to be able to recognize
 
 - two identical images with the same "ImageUniqueID" 
 
