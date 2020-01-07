@@ -18,13 +18,13 @@ and running through the notebook
 
 [`uscg-storis.ipynb`](https://github.com/coltongrainger/rdai/blob/master/uscg-storis.ipynb)
 
-on your system, then keeping note of what cells throw error messages. Our next check-in I will ask for a brief summary of the errors you ran into, and how you were able to circumvent them.
-
+on your system, then keeping note of what cells throw error messages. Our next check-in I will ask for a brief summary of the errors you ran into, and how you were able to circumvent them. (For "culture", you might read [How to Report Bugs Effectively](https://www.chiark.greenend.org.uk/~sgtatham/bugs.html), Simon Tatham. His standards are *much* higher than mine.)
 
 Right away, I should note you'll need to install, either with `conda` or `pip`, a few dependencies, including `python-magic`, and maybe others. (I'm quite ignorant when it comes to python environments and dependency management: Asking you to install packages "by hand" is *not the right way to do things*.)
 
 The goals for this task are
 
+- to draft a simple bug report,
 - to download a sample set of images, 
 - to create a `json` roster of the images in the `out` directory, and 
 - to rename the images according to their `uuid`.
