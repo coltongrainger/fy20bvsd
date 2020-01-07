@@ -4,6 +4,63 @@
 
 This is a reverse chronological TODO list. Please feel free to add notes/comments.
 
+### 2020-01-07
+
+Suchit! Here are two tasks for the next week or so.
+
+#### 1. Test the metadata ingest and note any errors.
+
+Most importantly, I've released a prototype of the metadata ingest system. Can you break it? That is, try cloning the repository
+
+<https://github.com/coltongrainger/rdai>
+
+and running through the notebook
+
+[`uscg-storis.ipynb`](https://github.com/coltongrainger/rdai/blob/master/uscg-storis.ipynb)
+
+on your system, then keeping note of what cells throw error messages. Our next check-in I will ask for a brief summary of the errors you ran into, and how you were able to circumvent them.
+
+
+Right away, I should note you'll need to install, either with `conda` or `pip`, a few dependencies, including `python-magic`, and maybe others. (I'm quite ignorant when it comes to python environments and dependency management: Asking you to install packages "by hand" is *not the right way to do things*.)
+
+The goals for this task are
+
+- to download a sample set of images, 
+- to create a `json` roster of the images in the `out` directory, and 
+- to rename the images according to their `uuid`.
+
+#### 2. Do a quick refresher on how to munge data with pandas.
+
+I've reorganized the notebooks in this repository according to my favorite *stable naming convention for literature*, which is 
+
+```
+<year>-<author>-<title>.<extension>
+```
+
+because such files can be stored in the same directory without too much namespace conflict, and it makes citing one's work later on a bit easier.
+
+Here are the notebooks we've worked through so far:
+
+- [`2016-kuleshov-python-numpy-tutorial.ipynb`](https://github.com/coltongrainger/fy20bvsd/blob/master/2016-kuleshov-python-numpy-tutorial.ipynb)
+- [`2015-dlab-introduction-workshop.ipynb`](https://github.com/coltongrainger/fy20bvsd/blob/master/2015-dlab-introduction-workshop.ipynb) (this version is my working copy)
+
+Can you do a brief review of the operations in `numpy` and `pandas` that are displayed in both of these notebooks?
+
+Concurrently, let's take a look at a similar, more recent, tutorial from Chris Fonnesbeck (referenced in the DLab tutorial):
+
+- `2017-fonnesbeck-1_Data_Preparation.ipynb`
+
+The Lunacek tutorials (e.g., those files `2019-lunacek*.ipynb`) have powergrid data from NREL, which might be of interest to you if you are comfortable with the three notebooks above.
+
+The goals for this task are to be proficient at indexing, slicing, reshaping, copying, and otherwise mutating 
+
+1. numpy arrays and 
+2. pandas DataFrames.
+
+#### coming up
+
+I have a supervision meeting on Thursday 2020-01-09. After it, I will decide whether our next step is to work towards a MySQL injection of image metadata with pandas or towards image file manipulation and classification with numpy/scipy.
+
 ### 2019-12-20
 
 The first goal should be to have enough proficiency with pandas to be able to load DataFrames from .json files that are
@@ -22,70 +79,6 @@ A third goal is to be able to recognize
 
 where "ImageUniqueID" can be read by `exiftool` a la `exiftool -ImageUniqueID image.jpg` and is given by 32 character hexadecimal string.
 
-> # pandas
-> 
-> Materials for teaching the introductory pandas workshop at UC Berkeley's D-Lab.
-> 
-> ## Set Up
-> 
-> For this workshop we'll be using a Jupyter notebook.
-> 
-> ### Software for the workshop
-> 
-> The best learning experience happens when you can edit and run code. So, please have pandas, Matplotlib, and Jupyter or IPython installed. There are several options for getting your environment set up.
-> 
-> 1. [Anaconda](http://continuum.io/downloads) with Python 3.5+ (2.7 is okay).
-> 2. Python 3.5+ (2.7 is okay) and required packages installed using a package manager, such as `conda` (via [Miniconda](https://conda.io/docs/install/quick.html)) or [pip](https://pip.pypa.io/en/stable/installing.html); you must install IPython 3.0+ with notebook support or IPython 4.0+/Jupyter 1.0+, pandas 0.17+, and Matplotlib 1.3+.
-> 3. (Perhaps as a last resort) [BCE Summer 2015](http://bce.berkeley.edu/install.html).
-> 
-> Both Anaconda and BCE distributions will install everything you need for this workshop (but BCE will most likely be out of date). If you decide to use `pip`, you can do the following (or for Miniconda, replace `pip` with `conda`):
-> 
-> ```
-> # Install pandas and Matplotlib
-> $ pip install pandas matplotlib
-> 
-> # Install Jupyter
-> $ pip install --upgrade jupyter
-> ```
-> 
-> ### Files for the workshop
-> 
-> Once those are installed, you should get the necessary files for this workshop, which are contained in this repository. Get them by doing the following:
-> 
-> ```
-> # Clone this repository
-> $ git clone https://github.com/dlab-berkeley/introduction-to-pandas.git
-> 
-> # Navigate to the repo
-> $ cd introduction-to-pandas
-> 
-> # Start the interactive session
-> $ jupyter notebook
-> 
-> # ...alternatively (older versions of IPython)
-> $ ipython notebook
-> ```
-> 
-> ## Outline
-> 
-> For this workshop, we'll go through an example using European unemployment data. We'll load, view, and modify the data as well as calculate some descriptive statistics. The idea is to get a sense of what it would be like to use pandas as part of your workflow.
-> 
-> We plan to cover:
-> 
-> * pandas data structures
-> * loading data
-> * subsetting and filtering
-> * calculating summary statistics
-> * dealing with missing values
-> * merging data sets
-> * creating new variables
-> * basic plotting
-> * exporting data
-> 
-> ## Further resources
-> 
-> [pandas Documentation](http://pandas.pydata.org/pandas-docs/stable/)
-
 ### 2019-11-06
 
 Hi Suchit! Please excuse me for taking a few weeks to follow up since our last video chat. Here is a short list of technical tasks (leading up to an introduction to Numpy in Python) for you to complete in, say, the next 14 days.
@@ -99,7 +92,7 @@ Hi Suchit! Please excuse me for taking a few weeks to follow up since our last v
 #### setup a scientific computing environment
 
 - Install [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) for your operating system.
-- Open [this tutorial](https://github.com/coltongrainger/fy20bvsd/blob/master/2019-11-06-kuleshov-python-numpy-tutorial.ipynb) by running `jupyter-notebook` in a [terminal](https://tutorial.djangogirls.org/en/intro_to_command_line/) in the directory that is your fork of this git repository on your operating system. There's a Graphic User Interface for the Jupyter Notebook in  your browser from which you can start the tutorial.
+- Open the `kuleshov` tutorial by running `jupyter-notebook` in a [terminal](https://tutorial.djangogirls.org/en/intro_to_command_line/) in the directory that is your fork of this git repository on your operating system. There's a Graphic User Interface for the Jupyter Notebook in  your browser from which you can start the tutorial.
 - Work through a few sections of that tutorial (at least until you get to the definition of arrays). 
 - Please come up with a list of 5 to 10 questions about numpy and python for our next videochat.
 
